@@ -1,0 +1,57 @@
+body{
+    background-color: cornsilk;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+address{
+   font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: disc;
+    
+}
+ul li{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+img{
+    margin-right: 600px;
+    border-style: none;
+    padding: 10px;
+    
+}
+table{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-spacing: 0 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+td{
+    padding-right: 100px;
+    padding-bottom: 10px;
+
+}
+button{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+label{
+    margin-right: 30px;
+}
+input{
+    margin-left: 30px;
+}
+textarea{
+    margin-left: 30px;
+}
