@@ -2,27 +2,36 @@
 <html>
     <head>
         <title>Contact me</title>
-        <script type="tex/javascript">
-            function myfunction()
-            {
-                alert("You clicked on submit");
-            }
+        <script src="contact.js">
         </script>
-        <link rel="stylesheet" href="res_style.css">
+        <link rel="stylesheet" href="contact.css">
     </head>
     <body>
         <h1>Contact Me</h1>
-        <form onsubmit="return validate();">
-            <label>Name</label>
-            <input type="text" id="name"/><br>
-            <label>Mobile</label>
-            <input type="text" id="phone"/><br>
-            <label>Email</label>
-            <input type="email" id="email"/><br>
-            <label>Message</label>
-            <textarea id="msg"></textarea><br>
-            <button type="submit" onclick="myfunction()">Submit</button>
-            <button type="reset">Reset</button>
+        <div id="error_message"></div>
+        <form onsubmit="return validation();">
+            <div class="item">
+                <label>Name</label>
+                <input type="text" id="Name" /><br>
+            </div>
+            <div class="item">
+                <label>Mobile</label>
+                <input type="text" id="Phone" /><br>
+            </div>
+            <div class="item">
+                <label>Email</label>
+                <input type="email" id="Email" /><br>
+            </div>
+            <div class="item">
+                <label>Message</label>
+                <textarea id="Msg" ></textarea><br>
+            </div>
+            <div class="but">
+                <button type="submit" onclick="myfunction()">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
         </form>
+    
     </body>
 </html>

@@ -1,0 +1,41 @@
+body {
+    background-color : rgb(212, 204, 204);
+    padding: 30px; 
+    border: 1px solid black; 
+    margin: 50px 200px;
+}
+h1 {
+    color:black;
+    text-align : center;
+    padding: 50px;
+    font-family: "SIMPSON";
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    display: table;
+}
+.item{
+    padding: 10px;
+    display: table-row;
+}
+label{
+    padding-right: 30px;
+    display: table-cell;
+}
+.but{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    padding: 5px;
+    display: table-cell;
+}
+input{
+    display: table-cell;
+}
+textarea{
+    display: table-cell;
+}
