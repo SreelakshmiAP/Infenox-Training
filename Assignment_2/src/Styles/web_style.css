@@ -15,6 +15,7 @@ html{
 }
 .logo{
     height: 140px;
+    width: 300px;
     
 }
 .line{
@@ -40,12 +41,12 @@ html{
     height: 40px;
     width: 225px;
     margin-top: 50px;
-    border: 2px solid grey;
+    border: 1px solid lightgrey;
     border-radius: 5px;
-    border-width: 1px;
+    border-width: 2px;
     text-align: center;
    line-height: 1.25;
-   margin-right: 10px;
+   margin-right: auto;
    position: relative;
    
 }
@@ -82,7 +83,7 @@ html{
     width: 80px;
     margin-left: 20px;
 }
-.line{
+.hr{
     width: 400px;
     margin: 32px 20px;
     border-bottom: 1.5px solid white;
@@ -111,7 +112,7 @@ html{
 }
 .p3{
     color: white;
-    margin: 0px 0px 0px 32px;
+    margin: 10px 0px 0px 32px;
     font-family: Sans Pro-Regular;
     font-size: 40px;
     line-height: 1.25;
