@@ -19,14 +19,13 @@ const getBlogs=(request,response)=>{
     const{
       title,
       description,
-      author,
-      created_at
+      author
     }=request.body;
     pool.query('insert into blogs(title, description, author,created_at)values($1,$2,$3,current_timestamp)',[title,description,author],(error,results)=>{
       if(error){
         throw error
       }
-      response.status(201).send(request.body)
+      response.status(201).send({"Status 201":"Created"})
     })
   }
   const updateBlogs=(request,response)=>{
@@ -34,15 +33,14 @@ const getBlogs=(request,response)=>{
       id,
       title,
       description,
-      author,
-      updated_at
+      author
     } = request.body;
     pool.query('update blogs set title=$1,description=$2,author=$3,updated_at=current_timestamp where id=$4',
     [title,description,author,id],(error,results)=>{
       if(error){
         throw error
       }
-      response.status(200).send(request.body)
+      response.status(200).send({"Status 200":"Updated"})
     })
   }
   const deleteBlogs=(request,response)=>{
@@ -51,7 +49,7 @@ const getBlogs=(request,response)=>{
       if(error){
         throw error
       }
-      response.status(201).send(request.body)
+      response.status(201).send({"Status 200":"Deleted"})
     })
   }
   module.exports={

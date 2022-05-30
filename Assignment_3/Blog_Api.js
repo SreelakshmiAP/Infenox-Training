@@ -4,7 +4,7 @@ const bodyParser= require('body-parser')
 //const { Pool } = require('pg')
 const db=require('./dbConnection')
 const app=express()
-const port=3000
+//const port=3000
 
 
 app.use(bodyParser.json())
@@ -18,9 +18,10 @@ app.post('/blogs',db.createBlogs)
 app.put('/blogs',db.updateBlogs)
 app.delete('/blogs',db.deleteBlogs)
 
-app.get('/',(request,response)=> {
+/*app.get('/',(request,response)=> {
   response.json({info:'Blog Api GET Request'})
-})
-app.listen(port,()=> {
+})*/
+app.listen(3000)
+/*app.listen(port,()=> {
   console.log(`Running on ${port}`)
-})
+})*/
